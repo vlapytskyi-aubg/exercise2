@@ -1,3 +1,9 @@
 # script for numbering the lines of a file
 # modify this script to prepend the next number to each line of the input file
-cat $1
+linescount=0
+cat $1 | while read line; do
+  linescount=$(($linescount + 1))
+  echo "$linescount:	$line"
+done
+linescount=
+
