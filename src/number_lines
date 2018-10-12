@@ -1,0 +1,2 @@
+# script for numbering the lines of a file
+cat -n $1
