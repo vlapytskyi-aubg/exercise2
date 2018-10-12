@@ -1,2 +1,4 @@
 # script for numbering the lines of a file
-cat -n $1
+# but first echo hello world for no good reason?!
+echo "hello world (remove this output)"
+cat $1
